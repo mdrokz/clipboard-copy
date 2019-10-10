@@ -1,0 +1,15 @@
+compile c++ file to dll
+
+command 1 = gcc -c source.cpp
+command 2 = gcc -shared -o mydll.dll source.o
+
+
+
+compile cpp to runnable
+
+command 1 = npm run -- autogypi \
+  --init-gyp \
+  -p nbind -s test.cpp
+
+command 2 = npm run -- node-gyp \
+  configure build
